@@ -96,7 +96,7 @@ in
               TITLE="\[\e]0;\u@\h: \w\a\]"
             fi
 
-            PS1="\n\[\033[$PROMPT_COLOR\][$TITLE\u@\h:\w]\\$\[\033[0m\] "
+            PS1="\n\[\033[$PROMPT_COLOR\]$TITLE[\u@\h:\w]\\$\[\033[0m\] "
 
             if test "$TERM" = "xterm"; then
               PS1="\[\033]2;\h:\u:\w\007\]$PS1"
